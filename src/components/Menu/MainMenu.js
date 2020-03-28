@@ -28,7 +28,7 @@ class MainMenu extends Component{
         return(
           <header className={this.state.scrolled ? 'main_menu scrollled' : 'main_menu'}>
           <nav className="navbar navbar-expand-lg navbar-light bg-light header-area">
-          <a className="navbar-brand" href="index.html"><img src={require("../../assets/image/logo/1.png")} alt="" /></a>
+          <a className="navbar-brand" href="index.html"><img src={require("../../assets/image/logo/esailing_logo.svg")} alt="" /></a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span></span>
           </button>

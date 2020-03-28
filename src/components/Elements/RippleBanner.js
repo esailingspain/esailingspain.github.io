@@ -14,7 +14,8 @@ class RippleBanner extends Component{
                 <div className="container">
                     <div className="hero-content">
                         <div id="typed-strings">
-                            <Typer dataText={["Web Developer","Photographer","UI/UX Designer", "Freelancer"]} />
+                            eSailing España
+                            {/* <Typer dataText={["Web Developer","Photographer","UI/UX Designer", "Freelancer"]} /> */}
                         </div>
                         <h2 className="hero-title"><span id="typed"></span></h2>
                         <p>{Details}</p>

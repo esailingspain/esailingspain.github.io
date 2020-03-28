@@ -13,7 +13,7 @@ class SubscribeWD extends Component{
                 </form>
                 <div className="f-social">
                     {
-                        WidgetData.Social.map(item =>{
+                        WidgetData.map(item =>{
                             return(
                                 <a key={item.id} href={item.url}><i className={item.icon}></i></a>
                             )

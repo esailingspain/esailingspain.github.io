@@ -1,4 +1,15 @@
+// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core'
 import React, {Component} from 'react';
+
+const imageStyle = css`
+position: absolute;
+left: -200px;
+@media (max-width: 991px) {
+    display: none;
+}
+`;
 
 class FeatureLeftItem extends Component{
     render(){
@@ -14,10 +25,12 @@ class FeatureLeftItem extends Component{
                                 <a href={Url} className="btn feature-btn">{BtnText}</a>
                             </div>
                         </div>
+                        <div className="col-lg-4">
+                            <div css={imageStyle}>
+                                <img src={require("../../assets/image/" + Image)} alt="" />
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div className="f-image">
-                    <img src={require("../../assets/image/" + Image)} alt="" />
                 </div>
             </div>
         )

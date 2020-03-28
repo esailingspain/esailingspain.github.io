@@ -1,7 +1,6 @@
 import * as React from "react"
 import * as $ from "jquery"
 import cleanProps from "clean-react-props"
-import "jquery.ripples"
 
 const useRipples = ({
   imageUrl,

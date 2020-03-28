@@ -10,7 +10,7 @@ class LegalWD extends Component{
                 <div className="widget_inner row m0">
                     <ul>
                         {
-                            WidgetData.Legal.map(item =>{
+                            WidgetData.map(item =>{
                                 return(
                                     <li key={item.id}><a href={item.url}>{item.name}</a></li>
                                 )

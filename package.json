@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@emotion/core": "^10.0.28",
     "bootstrap": "^4.4.1",
     "clean-react-props": "^0.4.0",
     "gatsby": "^2.19.45",
@@ -30,6 +31,7 @@
     "wow.js": "^1.2.2"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -37,6 +39,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",

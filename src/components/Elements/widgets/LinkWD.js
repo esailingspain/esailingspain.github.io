@@ -10,14 +10,12 @@ class LinkWD extends Component{
                 <div className="widget_inner row m0">
                     <ul>
                         {
-                            WidgetData.PageLink.map(item =>{
+                            WidgetData.map(item =>{
                                 return(
                                     <li key={item.id}><a href={item.url}>{item.name}</a></li>
                                 )
                             })
                         }
-                        
-                        
                     </ul>
                 </div>
             </div>

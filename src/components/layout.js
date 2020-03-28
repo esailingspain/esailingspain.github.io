@@ -12,7 +12,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 // import "./layout.css"
 // All Css File Import
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/vendors/linear-icon/style.css';
 import '../assets/css/font-awesome.min.css';
 import "slick-carousel/slick/slick.css"; 
@@ -21,9 +20,6 @@ import '../assets/css/animate.css';
 import '../assets/css/style.css'; 
 import '../assets/css/responsive.css'; 
 
-// All Js File Import
-import 'bootstrap/dist/js/bootstrap.min.js';
-import 'popper.js';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
