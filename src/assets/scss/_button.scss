@@ -1,0 +1,71 @@
+/*============Start button css=============*/
+.hero-btn{
+    font: 400 14px/27px $pop;
+    color: #80affb;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+    border-radius: 27px;
+    border: 2px solid #fff;
+    box-shadow: 5px 8.66px 20px 0px rgba(68, 84, 255, 0.078);
+    padding: 13px 61px;
+    position: relative;
+    transition: all 400ms linear 0s;
+    overflow: hidden;
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -50px;
+        bottom: 0;
+        left: 0;
+        border-right: 50px solid transparent;
+        border-bottom: 80px solid #fff;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+        transition: all 400ms linear 0s;
+        z-index: -1;
+    }
+    &:hover{
+        color: #fff;
+        &:before{
+            transform: translateX(-100%);
+        } 
+    }
+}
+/*============Start button css=============*/
+
+.purchase-btn{
+    font-size: 14px;
+    line-height: 41px;
+    color: $l-vio;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+    font-weight: 400;
+    padding: 6px 65px;
+    background-image: -webkit-linear-gradient(left, #a3a7fc 0%, #6bb4fa 100%);
+    background-image: -o-linear-gradient(left, #a3a7fc 0%, #6bb4fa 100%);
+    background-image: linear-gradient(left, #a3a7fc 0%, #6bb4fa 100%);
+    background-image: -moz-linear-gradient(left, #a3a7fc 0%, #6bb4fa 100%);
+    border-radius: 40px;
+    margin-top: 27px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 400ms linear 0s;
+   &:before{
+        content: '';
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        bottom: 1px;
+        left: 1px;
+        z-index: -1;
+        background: #fff;
+        border-radius: 40px;
+    }
+    &:hover,&:focus{
+        color: $l-vio;
+    }
+}

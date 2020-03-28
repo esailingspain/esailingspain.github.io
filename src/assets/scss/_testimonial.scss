@@ -1,0 +1,73 @@
+.testimonial-area{
+    background: #f3f9ff;
+    padding: 200px 0px;
+    overflow: hidden;
+    position: relative;
+    &:before{
+        content: "";
+        width: calc(100% - 375px);
+        background: url(../image/quote.png) no-repeat scroll;
+        height: calc(100% - 39px);
+        position: absolute;
+        background-position: center left;
+        left: 18%;
+        bottom: 0;
+        @media (max-width:1700px){
+            left: 10%;
+        }
+    }
+    
+}
+.testimonial-left{
+    width: calc(50% - 215px);
+    float: left;
+    .sec-title{
+        max-width: 370px;
+        text-align: left;
+        margin-right: 0px;
+        margin-top: 55px;
+        margin-bottom: 0px;
+        h2{
+            &:before{
+                left: 0;
+                transform: translateX(0);
+            }
+        }
+    }
+}
+.testimonial-right{
+    width: calc(50% + 215px);
+    float: right;
+}
+.swiper-slide{
+    width: 470px;
+    background: #fff;
+    padding: 50px 50px 59px;
+    box-shadow: 0px 5px 10px 0px rgba(26, 38, 74, 0.031);
+    border-radius: 5px;
+    .media{
+        .media-left{
+            padding-right: 22px;
+        }
+        .media-body{
+            font-family: $pop;
+            vertical-align: middle;
+            h5{
+                font-size: 18px;
+                line-height: 25px;
+                color: $l-vio;
+                font-weight: 400;
+            }
+            h6{
+                font-size: 16px;
+                line-height: 24px;
+                color: #c4c5de;
+                font-weight: 400;
+            }
+        }
+    }
+    p{
+        color: $w-vio;
+        padding-top: 28px;
+    }
+}

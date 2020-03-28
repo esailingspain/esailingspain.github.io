@@ -1,0 +1,161 @@
+/*============Start hero-area css=============*/
+.hero-area{
+    background: url("../image/baner/1.jpg") no-repeat scroll center 0;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    padding-top: 185px;
+    height: 940px;
+    &:before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: -moz-linear-gradient( 90deg, rgb(146,202,255) 0%, rgb(121,127,255) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(146,202,255) 0%, rgb(121,127,255) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(146,202,255) 0%, rgb(121,127,255) 100%);
+        opacity: 0.85;
+        z-index: -1;
+    }
+}
+.hero-content{
+    color: #fff;
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
+    .hero-title{
+        font-size: 48px;
+        line-height: 60px;
+        text-transform: capitalize;
+        font-weight: 700;
+        padding-bottom: 15px;
+        font-family: $pop;
+    }
+    p{
+        font-size: 24px;
+        line-height: 45px;
+        padding-bottom: 26px;
+    }
+}
+.hero-img{
+    position: relative;
+    top: 85px;
+    img{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        box-shadow: 10px 17.321px 50px 0px rgba(68, 84, 255, 0.059);
+        max-width: 100%;
+    }
+}
+
+/*============ typed-cursor css==========*/
+.typed-cursor{
+    opacity: 1;
+    font-weight: 100;
+    color: #fff;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    position: relative;
+    top: -2px;
+}
+@-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.typed-fade-out{
+    opacity: 0;
+    animation: 0;
+    transition: opacity .25s;
+}
+
+/*============End hero-area css=============*/
+
+/*============== Start hero area2 css ===========*/
+.hero-area2{
+    min-height: 1200px;
+    height: auto;
+    &:after{
+        content: "";
+        width: 100%;
+        height: calc(100% - 280px);
+        background: url("../image/baner/pattern-bg.png") no-repeat scroll center bottom;
+        bottom: 0;
+        position: absolute;
+        z-index: -1;
+        @media (min-width:1921px){
+            background-size: cover;
+        }
+    }
+    .hero-img{
+        top: 122px;
+        img{
+            box-shadow: none;
+        }
+    }
+}
+/*============End hero-area2 css=============*/
+
+.hero-ripples{
+    padding-top: 0px;
+    background: url("../image/baner/2.jpg") no-repeat scroll center 0;
+    background-size: cover;
+    &:before{
+        z-index: 0;
+    }
+    .hero-content{
+        max-width: 840px;
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        width: 100%;
+    }
+}
+
+
+/*============ hero-video css ==============*/
+
+.hero-video{
+    background: transparent;
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+    video{
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        top: 0;
+        left: 0;
+        z-index: -99;
+    }
+}

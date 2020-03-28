@@ -1,0 +1,118 @@
+/*============ footer areaf css ============*/
+.footer-top{
+    padding: 130px 0px 120px;
+}
+.f-widget{
+    .widget_title{
+        font: 500 20px/34px $pop;
+        color: #2e2e7f;
+        text-transform: capitalize;
+        padding-bottom: 50px;
+    }
+    .widget_inner{
+        li{
+            a{
+                font: 400 16px/34px $pop;
+                color: $w-vio;
+                text-transform: capitalize;
+                transition: all 0.4s linear;
+                &:hover{
+                    color: $l-vio;
+                }
+            }
+        }
+    }
+    &.logo_widget{
+        .logo{
+            display: block;
+            padding-bottom: 43px;
+        }
+        p{
+            font: 400 16px/30px $pop;
+            color: $w-vio;
+        }
+    }
+    &.about_widget,&.work_widget,&.legal_widget,&.subs_widget{
+        padding-top: 12px;
+        padding-left: 15px;
+    }
+    .email-form{
+        position: relative;
+        .form-control{
+            font: 300 14px/40px $pop;
+            padding: 0px 0px 0px 30px;
+            color: #aaaaaa;
+            height: 40px;
+            box-shadow: none;
+            text-shadow: none;
+            border: 0px;
+            width: 100%;
+            border-radius: 50px;
+            background: #f3f9ff;
+            @include placeholder{
+                color: #aaaaaa;
+            }
+        }
+        button{
+            background: transparent;
+            border: 0px;
+            padding: 0px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 18px;
+            line-height: 40px;
+            padding-right: 16px;
+            color: #2e2e7f;
+        }
+    }
+    .f-social{
+        padding-top: 35px;
+        a{
+            font-size: 14px;
+            line-height: 30px;
+            color: $l-vio;
+            padding-right: 18px;
+            transition: all 0.4s linear;
+            &:hover{
+                color: $vio;
+            }
+        }
+    }
+}
+.footer-bottom{
+    color: #fff;
+    background-image: -moz-linear-gradient( 90deg, rgb(107,180,250) 0%, rgb(163,167,252) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(107,180,250) 0%, rgb(163,167,252) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(107,180,250) 0%, rgb(163,167,252) 100%);
+    padding: 36px 0px;
+    p{
+        color: #ebebeb;
+        a{
+            color: #fff;
+            transition: all 0.6s ease-in-out;
+            &:hover{
+                color: $vio;
+            }
+        }
+    }
+    .b-lists{
+        width: 100%;
+        text-align: right;
+        li{
+            display: inline-block;
+            a{
+                font: 700 16px/28px $pop;
+                color: #fff;
+                transition: all 0.5s linear;
+                &:hover{
+                    color: $vio;
+                }
+            }
+            & + li{
+                padding-left: 45px;
+            }
+        }
+    }
+}
+/*============ footer areaf css ============*/

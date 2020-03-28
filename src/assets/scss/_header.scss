@@ -1,0 +1,175 @@
+/*===========Start pre-loader css =============*/
+.loader-container {
+    position: fixed;
+    float: left;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background-image: -moz-linear-gradient( 90deg, rgb(146,202,255) 0%, rgb(121,127,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(146,202,255) 0%, rgb(121,127,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(146,202,255) 0%, rgb(121,127,255) 100%);
+    z-index: 999999;
+}
+.loader-container .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+#loading-center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 200px;
+    width: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    -ms-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+.object {
+    -moz-border-radius: 50% 50% 50% 50%;
+    -webkit-border-radius: 50% 50% 50% 50%;
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid #fff;
+    border-right: 3px solid transparent;
+    -webkit-animation: animate 2s infinite;
+    animation: animate 2s infinite;
+}
+
+#object_one {
+    left: 75px;
+    top: 75px;
+    width: 50px;
+    height: 50px;
+}
+
+#object_two {
+    left: 65px;
+    top: 65px;
+    width: 70px;
+    height: 70px;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+#object_three {
+    left: 55px;
+    top: 55px;
+    width: 90px;
+    height: 90px;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+#object_four {
+    left: 45px;
+    top: 45px;
+    width: 110px;
+    height: 110px;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+.l-text{
+    font:400 19px $pop;
+    color: #fff;
+}
+@-webkit-keyframes animate {
+    50% {
+        -ms-transform: rotate(360deg) scale(0.8);
+        -webkit-transform: rotate(360deg) scale(0.8);
+        transform: rotate(360deg) scale(0.8);
+    }
+}
+
+@keyframes animate {
+    50% {
+        -ms-transform: rotate(360deg) scale(0.8);
+        -webkit-transform: rotate(360deg) scale(0.8);
+        transform: rotate(360deg) scale(0.8);
+    }
+}
+/*===========End pre-loader css =============*/
+
+.header-area{
+    border: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    padding: 20px 50px;
+    background: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    .navbar-brand{
+        padding: 0px 15px;
+        height: auto;
+    }
+    .menu{
+        li{
+            a{
+                font: 400 16px/58px $pop;
+                color: #fff;
+                padding: 0px;
+                transition: all 0.5s linear 0s;
+                position: relative;
+                &:before{
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    background: #fff;
+                    opacity: 0;
+                    position: absolute;
+                    bottom: 14px;
+                    transition: all 0.4s linear 0s;
+                    transform: scale(0);
+                }
+                &:hover{
+                    color: #fff;
+                    &:before{
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                }
+                &:focus{
+                    color: #fff;
+                }
+            }
+            & + li{
+                padding-left: 50px;
+            }
+            &.active{
+                a{
+                    background: transparent;
+                    color: #fff;
+                    &:before{
+                        content: "";
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                    &:hover,&:focus{
+                        background: transparent;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    &.affix{
+        position: fixed;
+        width: 100%;
+        background-image: -moz-linear-gradient(90deg, #92caff 0%, #797fff 100%);
+        background-image: -webkit-linear-gradient(90deg, #92caff 0%, #797fff 100%);
+        background-image: -ms-linear-gradient(90deg, #92caff 0%, #797fff 100%);
+        box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.18);
+        opacity: 0.80;
+        padding: 6px 50px;
+        z-index: 999;
+    }
+} 

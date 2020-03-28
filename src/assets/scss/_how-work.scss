@@ -1,0 +1,70 @@
+/*-----------Start how-work-area css ------------*/
+.how-work-area{
+    padding: 405px 0px 135px;
+    background: #f3f9ff;
+}
+.work-item{
+    text-align: center;
+    .icon{
+        width: 110px;
+        height: 110px;
+        background: #fff;
+        border-radius: 50%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        &:before{
+            content: "";
+            position: absolute;
+            background: rgba(137, 145, 247, 0.9);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            opacity: 0;
+            z-index: -1;
+            border-radius: 50%;
+        }
+        span{
+            font-size: 50px;
+            line-height: 110px;
+            color: $l-vio;
+            transition: all 0.4s linear;
+        }
+    }
+    h2{
+        font: 400 24px/55px $pop;
+        color: $l-vio;
+        text-transform: uppercase;
+        padding: 27px 0px 12px;
+    }
+    p{
+        line-height: 30px;
+    }
+    &:hover{
+        .icon{
+            background: rgba(137, 145, 247, 1);
+            span{
+                color: #fff;
+            }
+            &:before{
+                animation-name: hvr-ripple-out;
+                opacity: 1;
+            }
+        }
+    }
+}
+/*-----------End how-work-area css ------------*/
+.how-work2{
+    background: #fff;
+    padding-top: 147px;
+    padding-bottom: 0px;
+    .work-item .icon{
+        background: #f3f9ff;
+    }
+}
+.how-w3{
+    padding-top: 130px;
+}
