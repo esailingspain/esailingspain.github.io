@@ -5,6 +5,7 @@ import { css, jsx } from '@emotion/core'
 const imageStyle = css`
 position: absolute;
 right: -200px;
+z-index: 1;
 @media (max-width: 991px) {
     display: none;
 }
