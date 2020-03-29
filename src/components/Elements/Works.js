@@ -15,24 +15,19 @@ class Works extends Component{
                     <div className="row">
                         <WorkItem Class=" wow fadeIn" delay="0.5s"
                             component={(props) => <InshoreIcon {...props}/>}
-                            Image="INSHORE.svg"
-                            Icon="lnr lnr-cloud-sync"
+                            link="https://www.virtualregatta.com/en/inshore-game"
                             Title="Virtual Regatta"
                             Details="Virtual Regatta INSHORE: El juego oficial de la World Sailing."
                         />
-                        
                         <WorkItem Class=" wow fadeIn" delay="1s"
                             component={(props) => <DiscordIcon {...props}/>}
                             link="https://discord.gg/8PfD8pu"
-                            Image="Discord.svg"
-                            Icon="lnr lnr-pie-chart"
                             Title="Comunidad"
                             Details="Únete a nuestro discord. La mayor comunidad de eSailing del mundo."
                         />
                         <WorkItem Class=" wow fadeIn" delay="1.3s"
+                            link="https://sailranks.com"
                             component={(props) => <SailranksIcon {...props}/>}
-                            Image="SAILRANKS_BLACK.svg"
-                            Icon="lnr lnr-earth"
                             Title="SailRanks"
                             Details="La aplicación web para gestión de regatas de eSailing."
                         />

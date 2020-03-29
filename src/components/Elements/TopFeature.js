@@ -7,18 +7,18 @@ class TopFeature extends Component{
         return(
             <section className="features-area" id="features">
                 <FeatureLeftItem 
-                    Title="Top level featueres"
-                    Details="Lorem ipsum dolor sit amet, consectetur adipisicg elit, sed do eiusmod tempor incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused."
-                    BtnText="Learn More"
-                    Url="#"
-                    Image="pad-img.png" 
+                    Title="¿Dónde verlo?"
+                    Details="En eSailingTV, el principal canal de streaming para Virtual Regatta Inshore."
+                    BtnText="Visitar"
+                    Url="https://www.esailing.tv/"
+                    Image="esailingTV.png" 
                 />
                 <FeatureRightItem 
-                    Title="Top level featueres"
-                    Details="Lorem ipsum dolor sit amet, consectetur adipisicg elit, sed do eiusmod tempor incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused."
-                    BtnText="Learn More"
-                    Url="#"
-                    Image="pad-img.png" 
+                    Title="¿A qué esperas?"
+                    Details="Únete ya y pasa a formar parte de la mayor comunidad de eSailing en español."
+                    BtnText="Entrar"
+                    Url="https://discord.gg/8PfD8pu"
+                    Image="vregattaHome.png" 
                 />
             </section>
         )
