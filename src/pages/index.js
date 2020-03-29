@@ -26,7 +26,7 @@ const IndexPage = () => (
         Details="Comunidad española de eSailing."
         BtnText="Únete"
         Url="https://discord.gg/8PfD8pu"
-        Image="Navegando.png"
+        Image="backdrop_1b.png"
       />
       <Works AddClass="how-work2" />
       <TopFeature />
