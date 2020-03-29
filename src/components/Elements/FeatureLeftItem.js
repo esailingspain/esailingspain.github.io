@@ -1,7 +1,6 @@
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core'
-import React, {Component} from 'react';
 
 const imageStyle = css`
 position: absolute;
@@ -11,9 +10,8 @@ left: -200px;
 }
 `;
 
-class FeatureLeftItem extends Component{
-    render(){
-        var {Title, Details, BtnText, Url, Image} = this.props;
+const FeatureLeftItem = (props) => {
+        var {Title, Details, BtnText, Url, Image} = props;
         return(
             <div className="features-item f-br">
                 <div className="container">
@@ -34,6 +32,5 @@ class FeatureLeftItem extends Component{
                 </div>
             </div>
         )
-    }
 }
 export default FeatureLeftItem;

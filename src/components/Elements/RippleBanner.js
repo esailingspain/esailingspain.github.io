@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Typer from './Typer';
+// import Typer from './Typer';
 // import WaterWave from 'react-water-wave';
 import WaterWave from './WaterEffect'
 
@@ -14,10 +14,10 @@ class RippleBanner extends Component{
                 <div className="container">
                     <div className="hero-content">
                         <div id="typed-strings">
-                            eSailing España
                             {/* <Typer dataText={["Web Developer","Photographer","UI/UX Designer", "Freelancer"]} /> */}
+                            {/* <Typer dataText={["eSailing España"]} /> */}
                         </div>
-                        <h2 className="hero-title"><span id="typed"></span></h2>
+                        <h2 className="hero-title" style={{textTransform: 'none'}}><span id="typed">eSailing España</span></h2>
                         <p>{Details}</p>
                         <a href={Url} className="btn hero-btn wow fadeInLeft" data-wow-delay="300ms">{BtnText}</a>
                     </div>

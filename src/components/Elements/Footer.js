@@ -1,10 +1,10 @@
 import React, { Component } from "react"
-import AboutWD from "./widgets/AboutWD"
-import LinkWD from "./widgets/LinkWD"
-import WorkWD from "./widgets/WorkWD"
-import WidgetData from "./widgets/WidgetData"
-import LegalWD from "./widgets/LegalWD"
-import SubscribeWD from "./widgets/SubscribeWD"
+// import AboutWD from "./widgets/AboutWD"
+// import LinkWD from "./widgets/LinkWD"
+// import WorkWD from "./widgets/WorkWD"
+// import WidgetData from "./widgets/WidgetData"
+// import LegalWD from "./widgets/LegalWD"
+// import SubscribeWD from "./widgets/SubscribeWD"
 
 class Footer extends Component {
   render() {

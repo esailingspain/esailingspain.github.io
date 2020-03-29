@@ -38,8 +38,12 @@ class MainMenu extends Component{
                 <Link className="nav-link" activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={500}>Home</Link>
               </li>
               <li>
+                <Link className="nav-link" activeClass="active" to="how-work" spy={true} smooth={true} offset={0} duration={500}>Como</Link>
+              </li>
+              <li>
                 <Link className="nav-link" activeClass="active" to="features" spy={true} smooth={true} offset={0} duration={500}>Features</Link>
               </li>
+              {/* 
               <li>
                 <Link className="nav-link" activeClass="active" to="service" spy={true} smooth={true} offset={0} duration={500}>Services</Link>
               </li>
@@ -51,7 +55,7 @@ class MainMenu extends Component{
               </li>
               <li>
                 <Link className="nav-link" activeClass="active" to="Subscribe" spy={true} smooth={true} offset={0} duration={500}>Subscribe</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>
