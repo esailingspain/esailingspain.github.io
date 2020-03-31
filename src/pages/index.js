@@ -8,8 +8,8 @@ import SEO from "../components/seo"
 import MainMenu from "../components/Menu/MainMenu"
 import Works from "../components/Elements/Works"
 import TopFeature from "../components/Elements/TopFeature"
-// import Dashboard from "../components/Elements/Dashboard"
-// import DashboardTab from "../components/Elements/DashboardTab"
+import Dashboard from "../components/Elements/Dashboard"
+import DashboardTab from "../components/Elements/DashboardTab"
 // import CustomerSlider from "../components/Elements/CutomerSlider"
 // import PriceList from "../components/Elements/PriceList"
 // import Subscribe from "../components/Elements/Subscribe"
@@ -26,11 +26,11 @@ const IndexPage = () => (
         Details="Comunidad española de eSailing."
         BtnText="Únete"
         Url="https://discord.gg/8PfD8pu"
-        Image="backdrop_1b.png"
+        Image="Navegando2.png"
       />
       <Works AddClass="how-work2" />
       <TopFeature />
-      {/* <Dashboard LeftTitle="Our Dashboard features" RightTitle="Our Dashboard features" /> */}
+      <Dashboard LeftTitle="Nuestros Logros" RightTitle="Nuestras expectativas" />
       {/* <DashboardTab /> */}
       {/* <CustomerSlider /> */}
       {/* <PriceList /> */}

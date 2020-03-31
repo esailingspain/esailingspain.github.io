@@ -17,18 +17,18 @@ class Works extends Component{
                             component={(props) => <InshoreIcon {...props}/>}
                             link="https://www.virtualregatta.com/en/inshore-game"
                             Title="Virtual Regatta"
-                            Details="Virtual Regatta INSHORE: El juego oficial de la World Sailing."
+                            Details="Virtual Regatta Inshore: El juego oficial de la World Sailing."
                         />
                         <WorkItem Class=" wow fadeIn" delay="1s"
                             component={(props) => <DiscordIcon {...props}/>}
                             link="https://discord.gg/8PfD8pu"
-                            Title="Comunidad"
+                            Title="eSailing España"
                             Details="Únete a nuestro discord. La mayor comunidad de eSailing del mundo."
                         />
                         <WorkItem Class=" wow fadeIn" delay="1.3s"
                             link="https://sailranks.com"
                             component={(props) => <SailranksIcon {...props}/>}
-                            Title="SailRanks"
+                            Title="SailRanks."
                             Details="La aplicación web para gestión de regatas de eSailing."
                         />
                     </div>
