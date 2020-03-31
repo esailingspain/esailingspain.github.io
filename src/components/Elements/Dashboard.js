@@ -20,18 +20,18 @@ class Dashboard extends Component{
                             <h2 className="po-title">{LeftTitle}</h2>
                             <DashItem Class="wow fadeInUp" delay="200ms"
                                 Icon="lnr lnr-laptop-phone"
-                                Title="Available in all platform"
-                                Details="Lorem ipsum dolor sit amet, conse adipisicing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua."
+                                Title="La comunidad más numerosa"
+                                Details="Gestionamos la Comunidad Nacional mejor valorada y con más usuarios del mundo. El ejemplo a seguir!!"
                             />
                             <DashItem Class="wow fadeInUp" delay="600ms"
                                 Icon="lnr lnr-diamond"
-                                Title="Available in all platform"
-                                Details="Lorem ipsum dolor sit amet, conse adipisicing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua."
+                                Title="Usuarios expertos"
+                                Details="Tenemos una amplia experiencia en la organización de regatas de eSailing: De flota, rankings, Team Racing, Match Race..."
                             />
                             <DashItem Class="wow fadeInUp" delay="900ms"
                                 Icon="lnr lnr-rocket"
-                                Title="Available in all platform"
-                                Details="Lorem ipsum dolor sit amet, conse adipisicing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua."
+                                Title="Colaboramos con los mejores"
+                                Details="Tenemos una estrecha colaboración con la Comunidad Internacional, eSailingtv y SailRanks. Y nuestro objetivo es continuar colaborando"
                             />
                         </div>
                         <div className="col-md-6 powerful-items power-item-r">
@@ -41,8 +41,8 @@ class Dashboard extends Component{
                             <h2 className="po-title">{RightTitle}</h2>
                             <DashItem Class="wow fadeInUp" delay="400ms"
                                 Icon="lnr lnr-database"
-                                Title="Available in all platform"
-                                Details="Lorem ipsum dolor sit amet, conse adipisicing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua."
+                                Title="Mejorar nuestras competiciones"
+                                Details="Seguiremos explorando formatos, sistemas y mejoras para llegar a la excelencia en la organización de eventos"
                             />
                             <DashItem Class="wow fadeInUp" delay="800ms"
                                 Icon="lnr lnr-license" 
