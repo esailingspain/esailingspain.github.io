@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `eSailing Spain`,
     description: `La comunidad de eSailing en español.`,
-    author: `@xabitrigo`,
+    author: `@esailingSpain`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
