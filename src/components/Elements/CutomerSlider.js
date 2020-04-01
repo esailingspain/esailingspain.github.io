@@ -5,6 +5,20 @@ import sailingSurLogo from "../../assets/image/SailingSur.png"
 import galicloudLogo from "../../assets/image/galicloud.png"
 
 class CustomerSlider extends Component{
+
+    constructor(props){
+        super(props);
+        this.state = {
+            render: false
+        }
+    }
+
+    componentDidMount(){
+        // Necesitamos evitar que el caroussel se pinte hasta que el componente se monte, o sino fallará con gatsby
+        // https://github.com/gatsbyjs/gatsby/issues/13562#issuecomment-489220090
+        this.setState({render: true});
+    }
+
     render(){
         const settings = {
             dots: false,
@@ -42,6 +56,7 @@ class CustomerSlider extends Component{
                     </div>
                 </div>
                 <div className="testimonial-right">
+                    {this.state.render ? ( 
                     <Slider {...settings} className="testimonials_slider">
                         <div className="item">
                             <div className="media">
@@ -115,7 +130,9 @@ class CustomerSlider extends Component{
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor indunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
                         </div> */}
-                    </Slider>
+                    </Slider>) 
+                    : ''}
+                   
                 </div>
             </section>
         )
