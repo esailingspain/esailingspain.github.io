@@ -7,10 +7,10 @@ class SubscribeWD extends Component{
         return(
             <div className={"f-widget subs_widget col-lg-3 col-md-9 " + Class} data-wow-delay={delay}>
                 <h4 className="widget_title">{this.props.Title}</h4>
-                <form action="#" className="email-form">
+                {/* <form action="#" className="email-form">
                     <input type="search" className="form-control" placeholder="E-mail" />
                     <button type="submit"><i className="lnr lnr-arrow-right"></i></button>
-                </form>
+                </form> */}
                 <div className="f-social">
                     {
                         WidgetData.map(item =>{

@@ -73,8 +73,8 @@ const WidgetData = {
         },
         {
             id: 3,
-            url: 'https://www.instagram.com/',
-            icon: 'fa fa-instagram',
+            url: 'https://youtu.be/cfrVVgT_qvQ',
+            icon: 'fa fa-youtube-play',
         },
        /*  {
             id: 4,
