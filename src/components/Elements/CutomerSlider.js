@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import Slider from "react-slick";
+import sailRanksLogo from "../../assets/image/sailranks.png"
+import sailingSurLogo from "../../assets/image/SailingSur.png"
+import galicloudLogo from "../../assets/image/galicloud.png"
 
 class CustomerSlider extends Component{
     render(){
@@ -43,7 +46,7 @@ class CustomerSlider extends Component{
                         <div className="item">
                             <div className="media">
                                 <div className="media-left">
-                                    <img className="img-circle" src={require("../../assets/image/galicloud.png")} alt="" />
+                                    <img className="img-circle" src={galicloudLogo} alt="" />
                                 </div>
                                 <div className="media-body">
                                     <h4>Galicloud</h4>
@@ -55,7 +58,7 @@ class CustomerSlider extends Component{
                         <div className="item">
                             <div className="media">
                                 <div className="media-left">
-                                    <img className="img-circle" src={require("../../assets/image/SailingSur.png")} alt="" />
+                                    <img className="img-circle" src={sailingSurLogo} alt="" />
                                 </div>
                                 <div className="media-body">
                                     <h4>Sailing Sur</h4>
@@ -67,7 +70,7 @@ class CustomerSlider extends Component{
                         <div className="item">
                             <div className="media">
                                 <div className="media-left">
-                                    <img className="img-circle" src={require("../../assets/image/sailranks.png")} alt="" />
+                                    <img className="img-circle" src={sailRanksLogo} alt="" />
                                 </div>
                                 <div className="media-body">
                                     <h4>SailRanks</h4>
