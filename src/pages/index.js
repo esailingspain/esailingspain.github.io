@@ -10,7 +10,7 @@ import Works from "../components/Elements/Works"
 import TopFeature from "../components/Elements/TopFeature"
 import Dashboard from "../components/Elements/Dashboard"
 import DashboardTab from "../components/Elements/DashboardTab"
-// import CustomerSlider from "../components/Elements/CutomerSlider"
+import CustomerSlider from "../components/Elements/CutomerSlider"
 // import PriceList from "../components/Elements/PriceList"
 // import Subscribe from "../components/Elements/Subscribe"
 import Footer from "../components/Elements/Footer"
@@ -31,8 +31,8 @@ const IndexPage = () => (
       <Works AddClass="how-work2" />
       <TopFeature />
       <Dashboard LeftTitle="Nuestros Logros" RightTitle="Nuestras expectativas" />
-      {/* <DashboardTab /> */}
-      {/* <CustomerSlider /> */}
+      <DashboardTab /> 
+      <CustomerSlider />
       {/* <PriceList /> */}
       {/* <Subscribe /> */}
       <Footer WidgetData={WidgetData} />

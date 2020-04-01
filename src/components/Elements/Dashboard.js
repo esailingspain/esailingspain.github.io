@@ -20,6 +20,7 @@ class Dashboard extends Component{
                             <h2 className="po-title">{LeftTitle}</h2>
                             <DashItem Class="wow fadeInUp" delay="200ms"
                                 Icon="lnr lnr-laptop-phone"
+                                Url="https://discord.gg/8PfD8pu"
                                 Title="La comunidad más numerosa"
                                 Details="Gestionamos la Comunidad Nacional mejor valorada y con más usuarios del mundo. El ejemplo a seguir!!"
                             />
@@ -46,13 +47,13 @@ class Dashboard extends Component{
                             />
                             <DashItem Class="wow fadeInUp" delay="800ms"
                                 Icon="lnr lnr-license" 
-                                Title="Available in all platform"
-                                Details="Lorem ipsum dolor sit amet, conse adipisicing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua."
+                                Title="Llegar al mayor número de usuarios"
+                                Details="Realización de campeonatos para todos los públicos, desde alto nivel hasta los primeros pasos"
                             />
                             <DashItem Class="wow fadeInUp" delay="1s"
                                 Icon="lnr lnr-chart-bars"
-                                Title="Available in all platform"
-                                Details="Lorem ipsum dolor sit amet, conse adipisicing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua."
+                                Title="Comunidad en contínuo crecimiento"
+                                Details="Facilitar el acceso a todas las personas sean de la edad que sean"
                             />
                         </div>
                     </div>

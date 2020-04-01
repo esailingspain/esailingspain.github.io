@@ -41,16 +41,15 @@ class MainMenu extends Component{
                 <Link className="nav-link" activeClass="active" to="how-work" spy={true} smooth={true} offset={0} duration={500}>Como</Link>
               </li>
               <li>
-                <Link className="nav-link" activeClass="active" to="features" spy={true} smooth={true} offset={0} duration={500}>Features</Link>
+                <Link className="nav-link" activeClass="active" to="features" spy={true} smooth={true} offset={0} duration={500}>Servicios</Link>
               </li>
-              {/* 
+               <li>
+                <Link className="nav-link" activeClass="active" to="service" spy={true} smooth={true} offset={0} duration={500}>Logros</Link>
+              </li> 
               <li>
-                <Link className="nav-link" activeClass="active" to="service" spy={true} smooth={true} offset={0} duration={500}>Services</Link>
+                <Link className="nav-link" activeClass="active" to="testimonial" spy={true} smooth={true} offset={0} duration={500}>Colaboradores</Link>
               </li>
-              <li>
-                <Link className="nav-link" activeClass="active" to="testimonial" spy={true} smooth={true} offset={0} duration={500}>Testimonial</Link>
-              </li>
-              <li>
+              {/* <li>
                 <Link className="nav-link" activeClass="active" to="price" spy={true} smooth={true} offset={0} duration={500}>Pricing</Link>
               </li>
               <li>

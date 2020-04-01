@@ -17,7 +17,7 @@ class RippleBanner extends Component{
                             {/* <Typer dataText={["Web Developer","Photographer","UI/UX Designer", "Freelancer"]} /> */}
                             {/* <Typer dataText={["eSailing España"]} /> */}
                         </div>
-                        <h2 className="hero-title" style={{textTransform: 'none'}}><span id="typed">eSailing España</span></h2>
+                        <h1 className="hero-title" style={{textTransform: 'none'}}><span id="typed">eSailing España</span></h1>
                         <p>{Details}</p>
                         <a href={Url} className="btn hero-btn wow fadeInLeft" data-wow-delay="300ms">{BtnText}</a>
                     </div>

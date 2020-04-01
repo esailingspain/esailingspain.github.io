@@ -3,7 +3,7 @@ import CenterTitle from './CenterTitle';
 import WorkItem from './WorkItem';
 import { InshoreIcon } from "./icons/InshoreIcon"
 import { DiscordIcon } from "./icons/DiscordIcon"
-import { SailranksIcon } from "./icons/SailranksIcon"
+//import { SailranksIcon } from "./icons/SailranksIcon"
 
 
 class Works extends Component{
@@ -19,18 +19,25 @@ class Works extends Component{
                             Title="Virtual Regatta"
                             Details="Virtual Regatta Inshore: El juego oficial de la World Sailing."
                         />
-                        <WorkItem Class=" wow fadeIn" delay="1s"
+                         <WorkItem Class=" wow fadeIn" delay="1s"
                             component={(props) => <DiscordIcon {...props}/>}
                             link="https://discord.gg/8PfD8pu"
                             Title="eSailing España"
                             Details="Únete a nuestro discord. La mayor comunidad de eSailing del mundo."
                         />
-                        <WorkItem Class=" wow fadeIn" delay="1.3s"
+                        <WorkItem Class=" wow fadeIn" delay="1s"
+                            component={(props) => <InshoreIcon {...props}/>}
+                            link="https://rfev.es/uploaded_files/AR-CtodeEspa%C3%B1aRFEV.pdf_7310_es.pdf"
+                            Title="Campeonato Nacional"
+                            Details="Participa en el Campeonato de España Oficial de eSailing "
+                        />
+                        
+                        {/* <WorkItem Class=" wow fadeIn" delay="1.3s"
                             link="https://sailranks.com"
                             component={(props) => <SailranksIcon {...props}/>}
                             Title="SailRanks."
                             Details="La aplicación web para gestión de regatas de eSailing."
-                        />
+                        />  */}
                     </div>
                 </div>
             </section>
