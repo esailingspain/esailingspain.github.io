@@ -1,6 +1,6 @@
 const WidgetData = {
     PageLink: [
-        {
+       /*  {
             id: 1,
             name: 'About',
             url: '#',
@@ -19,7 +19,7 @@ const WidgetData = {
             id: 4,
             name: 'Career',
             url: '#',
-        },
+        }, */
         {
             id: 5,
             name: 'Contact',
@@ -63,7 +63,7 @@ const WidgetData = {
     Social: [
         {
             id: 1,
-            url: 'https://www.facebook.com/',
+            url: 'https://www.facebook.com/esailing.espana.3',
             icon: 'fa fa-facebook',
         },
         {
@@ -76,11 +76,11 @@ const WidgetData = {
             url: 'https://www.instagram.com/',
             icon: 'fa fa-instagram',
         },
-        {
+       /*  {
             id: 4,
             url: 'https://www.pinterest.com/',
             icon: 'fa fa-pinterest',
-        },
+        }, */
     ],
     PageList: [
         {

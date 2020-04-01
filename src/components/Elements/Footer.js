@@ -1,48 +1,48 @@
 import React, { Component } from "react"
-// import AboutWD from "./widgets/AboutWD"
-// import LinkWD from "./widgets/LinkWD"
-// import WorkWD from "./widgets/WorkWD"
-// import WidgetData from "./widgets/WidgetData"
-// import LegalWD from "./widgets/LegalWD"
-// import SubscribeWD from "./widgets/SubscribeWD"
+import AboutWD from "./widgets/AboutWD"
+import LinkWD from "./widgets/LinkWD"
+import WorkWD from "./widgets/WorkWD"
+import WidgetData from "./widgets/WidgetData"
+import LegalWD from "./widgets/LegalWD"
+import SubscribeWD from "./widgets/SubscribeWD"
 
 class Footer extends Component {
   render() {
     const footerLinks = [
-      //   {
-      //     id: 1,
-      //     name: "Privacy Policy",
-      //     url: "#",
-      //   },
-      //   {
-      //     id: 2,
-      //     name: "About",
-      //     url: "#",
-      //   },
-      //   {
-      //     id: 3,
-      //     name: "FAQ",
-      //     url: "#",
-      //   },
-      //   {
-      //     id: 4,
-      //     name: "Contact Support",
-      //     url: "#",
-      //   },
+        /*  {
+           id: 1,
+           name: "Privacy Policy",
+           url: "#",
+         },
+         {
+           id: 2,
+           name: "About",
+           url: "#",
+         },
+         {
+           id: 3,
+           name: "FAQ",
+           url: "#",
+         },
+         {
+           id: 4,
+           name: "Contact Support",
+           url: "#",
+         }, */
     ]
     return (
       <footer className="footer-area">
-        {/* <div className="footer-top">
+         <div className="footer-top">
                     <div className="container">
                         <div className="row">
-                            <AboutWD Logo="footer-logo.png" Details="Actualmente la mayor comunidad de e-sailing del mundo." />
+                            <AboutWD Logo="logo-trans-mini.png" Details="Actualmente la mayor comunidad de e-sailing del mundo." />
                             <LinkWD Title="About" WidgetData={WidgetData.PageLink} Class="wow fadeInUp" delay="200ms" />
-                            <WorkWD Title="Work" WidgetData={WidgetData.Work} Class="wow fadeInUp" delay="400ms" />
-                            <LegalWD Title="Legal" WidgetData={WidgetData.Legal} Class="wow fadeInUp" delay="600ms" />
+                            {/* <WorkWD Title="Work" WidgetData={WidgetData.Work} Class="wow fadeInUp" delay="400ms" />
+                            <LegalWD Title="Legal" WidgetData={WidgetData.Legal} Class="wow fadeInUp" delay="600ms" /> */}
                             <SubscribeWD Title="Subscribe" WidgetData={WidgetData.Social} Class="wow fadeInUp" delay="800ms" />
                         </div>
                     </div>
-                </div> */}
+                </div>
         <div className="footer-bottom">
           <div className="container">
             <div className="row">
