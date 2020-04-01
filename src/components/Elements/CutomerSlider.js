@@ -75,8 +75,20 @@ class CustomerSlider extends Component{
                                 </div>
                             </div>
                             <p>Este nuevo Sistema de Gestión de Resultados está especializado en el eSailing. Solución rápida y eficaz para la realización de tus regatas.</p>
-                        </div>
-                        <div className="item">
+                       </div>
+                       {/*  <div className="item">
+                            <div className="media">
+                                <div className="media-left">
+                                    <img className="img-circle" src={require("../../assets/image/testimonial1.png")} alt="" />
+                                </div>
+                                <div className="media-body">
+                                    <h5>Anwar Ali</h5>
+                                    <h6>Art Dirrector</h6>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor indunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
+                        </div>  */}
+                        {/* <div className="item">
                             <div className="media">
                                 <div className="media-left">
                                     <img className="img-circle" src={require("../../assets/image/testimonial1.png")} alt="" />
@@ -99,19 +111,7 @@ class CustomerSlider extends Component{
                                 </div>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor indunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
-                        </div>
-                        <div className="item">
-                            <div className="media">
-                                <div className="media-left">
-                                    <img className="img-circle" src={require("../../assets/image/testimonial1.png")} alt="" />
-                                </div>
-                                <div className="media-body">
-                                    <h5>Anwar Ali</h5>
-                                    <h6>Art Dirrector</h6>
-                                </div>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor indunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
-                        </div>
+                        </div> */}
                     </Slider>
                 </div>
             </section>

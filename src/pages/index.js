@@ -32,7 +32,7 @@ const IndexPage = () => (
       <TopFeature />
       <Dashboard LeftTitle="Nuestros Logros" RightTitle="Nuestras expectativas" />
       <DashboardTab /> 
-      <CustomerSlider />
+      <CustomerSlider /> 
       {/* <PriceList /> */}
       {/* <Subscribe /> */}
       <Footer WidgetData={WidgetData} />
