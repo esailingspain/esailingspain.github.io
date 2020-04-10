@@ -8,8 +8,10 @@
     "@emotion/core": "^10.0.28",
     "bootstrap": "^4.4.1",
     "clean-react-props": "^0.4.0",
+    "formik": "^2.1.4",
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
+    "gatsby-plugin-anchor-links": "^1.1.1",
     "gatsby-plugin-manifest": "^2.2.48",
     "gatsby-plugin-offline": "^3.0.41",
     "gatsby-plugin-react-helmet": "^3.1.24",
@@ -24,12 +26,13 @@
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.12.0",
     "react-facebook": "^8.1.4",
-    "react-helmet": "^5.2.1",
+    "react-helmet": "^6.0.0",
     "react-scroll": "^1.7.16",
     "react-slick": "^0.25.2",
     "react-water-wave": "^1.0.5",
     "slick-carousel": "^1.8.1",
-    "wow.js": "^1.2.2"
+    "wow.js": "^1.2.2",
+    "yup": "^0.28.3"
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",

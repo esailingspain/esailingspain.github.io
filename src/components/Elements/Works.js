@@ -27,7 +27,7 @@ class Works extends Component{
                         />
                         <WorkItem Class=" wow fadeIn" delay="1s"
                             component={(props) => <InshoreIcon {...props}/>}
-                            link="https://rfev.es/uploaded_files/AR-CtodeEspa%C3%B1aRFEV.pdf_7310_es.pdf"
+                            link="/register"
                             Title="Campeonato Nacional"
                             Details="Participa en el Campeonato de España Oficial de eSailing "
                         />
