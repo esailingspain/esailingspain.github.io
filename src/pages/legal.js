@@ -8,16 +8,16 @@ const SecondPage = () => (
   <Layout>
     <SEO title="Legal" />
     <h1>Aviso Legal</h1>
-    <p>0. OBJETO Y ACEPTACIÓN
-        El presente aviso legal regula el uso del sitio web www.rfev.es (en adelante, LA WEB), del que es titular esailing España (en adelante, EL PROPIETARIO DE LA WEB).
+      <h3>0. OBJETO Y ACEPTACIÓN</h3>
+      <p> El presente aviso legal regula el uso del sitio web www.rfev.es (en adelante, LA WEB), del que es titular esailing España (en adelante, EL PROPIETARIO DE LA WEB).
         La navegación por el sitio web de EL PROPIETARIO DE LA WEB atribuye la condición de usuario del mismo e implica la aceptación plena y sin reservas de todas y cada una de las disposiciones incluidas en este Aviso Legal, que pueden sufrir modificaciones
         El usuario se obliga a hacer un uso correcto del sitio web de conformidad con las leyes, la buena fe, el orden público, los usos del tráfico y el presente Aviso Legal. El usuario responderá frente a EL PROPIETARIO DE LA WEB o frente a terceros, de cualesquiera daños y perjuicios que pudieran causarse como consecuencia del incumplimiento de dicha obligación.
         1. IDENTIFICACIÓN Y COMUNICACIONES
         En cumplimiento de lo establecido en el art. 10 de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico, se le informa de que:
         A efectos de comunicar con EL PROPIETARIO DE LA WEB puede dirigirse a la dirección esailingspain@gmail.com Todas las notificaciones y comunicaciones entre los usuarios y EL PROPIETARIO DE LA WEB se considerarán eficaces, a todos los efectos, cuando se realicen a través los medios detallados anteriormente.
-
-        2. CONDICIONES DE ACCESO Y UTILIZACIÓN
-
+        </p>
+        <h3>2. CONDICIONES DE ACCESO Y UTILIZACIÓN</h3>
+        <p>
         El sitio web y sus servicios son de acceso libre y gratuito, no obstante, EL PROPIETARIO DE LA WEB puede condicionar la utilización de algunos de los servicios ofrecidos en su web a la previa cumplimentación del correspondiente formulario y su posterior autorización.
         El usuario garantiza la autenticidad y actualidad de todos aquellos datos que comunique a EL PROPIETARIO DE LA WEB y será el único responsable de las manifestaciones falsas o inexactas que realice.
         El usuario se compromete expresamente a hacer un uso adecuado de los contenidos y servicios de EL PROPIETARIO DE LA WEB y a no emplearlos para, entre otros:
@@ -32,11 +32,11 @@ const SecondPage = () => (
         En definitiva, los usuarios que accedan a este sitio web pueden visualizar los contenidos y efectuar, en su caso, copias privadas autorizadas siempre que los elementos reproducidos no sean cedidos posteriormente a terceros, ni se instalen a servidores conectados a redes, ni sean objeto de ningún tipo de explotación.
         Asimismo, todas las marcas, nombres comerciales o signos distintivos de cualquier clase que aparecen en el sitio web son propiedad de EL PROPIETARIO DE LA WEB, sin que pueda entenderse que el uso o acceso al mismo atribuya al usuario derecho alguno sobre los mismos.
         La distribución, modificación, cesión o comunicación pública de los contenidos y cualquier otro acto que no haya sido expresamente autorizado por el titular de los derechos de explotación quedan prohibidos.
-        El establecimiento de un hiperenlace no implica en ningún caso la existencia de relaciones entre EL PROPIETARIO DE LA WEB y el propietario del sitio web en la que se establezca, ni la aceptación y aprobación por parte de EL PROPIETARIO DE LA WEB de sus contenidos o servicios. Aquellas personas que se propongan establecer un hiperenlace previamente deberán solicitar autorización por escrito a EL
-
-        PROPIETARIO DE LA WEB. En todo caso, el hiperenlace únicamente permitirá el acceso a la home-page o página de inicio de nuestro sitio web, asimismo deberá abstenerse de realizar manifestaciones o indicaciones falsas, inexactas o incorrectas sobre EL PROPIETARIO DE LA WEB, o incluir contenidos ilícitos, contrarios a las buenas costumbres y al orden público.
+        El establecimiento de un hiperenlace no implica en ningún caso la existencia de relaciones entre EL PROPIETARIO DE LA WEB y el propietario del sitio web en la que se establezca, ni la aceptación y aprobación por parte de EL PROPIETARIO DE LA WEB de sus contenidos o servicios. Aquellas personas que se propongan establecer un hiperenlace previamente deberán solicitar autorización por escrito a PROPIETARIO DE LA WEB. En todo caso, el hiperenlace únicamente permitirá el acceso a la home-page o página de inicio de nuestro sitio web, asimismo deberá abstenerse de realizar manifestaciones o indicaciones falsas, inexactas o incorrectas sobre EL PROPIETARIO DE LA WEB, o incluir contenidos ilícitos, contrarios a las buenas costumbres y al orden público.
         EL PROPIETARIO DE LA WEB no se responsabiliza del uso que cada usuario le dé a los materiales puestos a disposición en este sitio web ni de las actuaciones que realice en base a los mismos.
-        3. EXCLUSIÓN DE GARANTÍAS Y DE RESPONSABILIDAD
+        </p>
+        <h3>3. EXCLUSIÓN DE GARANTÍAS Y DE RESPONSABILIDAD</h3>
+        <p>
         El contenido del presente sitio web es de carácter general y tiene una finalidad meramente informativa, sin que se garantice plenamente el acceso a todos los contenidos, ni su exhaustividad, corrección, vigencia o actualidad, ni su idoneidad o utilidad para un objetivo específico.
 
         EL PROPIETARIO DE LA WEB excluye, hasta donde permite el ordenamiento jurídico, cualquier responsabilidad por los daños y perjuicios de toda naturaleza derivados de:
@@ -46,11 +46,13 @@ const SecondPage = () => (
         c) El incumplimiento de las leyes, la buena fe, el orden público, los usos del tráfico y el presente aviso legal como consecuencia del uso incorrecto del sitio web. En particular, y a modo ejemplificativo, EL PROPIETARIO DE LA WEB no se hace responsable de las actuaciones de terceros que vulneren derechos de propiedad intelectual e industrial, secretos empresariales, derechos al honor, a la intimidad personal y familiar y a la propia imagen, así como la normativa en materia de competencia desleal y publicidad ilícita.
 
         Asimismo, EL PROPIETARIO DE LA WEB declina cualquier responsabilidad respecto a la información que se halle fuera de esta web y no sea gestionada directamente por nuestro webmaster. La función de los links que aparecen en esta web es exclusivamente la de informar al usuario sobre la existencia de otras fuentes susceptibles de ampliar los contenidos que ofrece este sitio web. EL PROPIETARIO DE LA WEB no garantiza ni se responsabiliza del funcionamiento o accesibilidad de los sitios enlazados; ni sugiere, invita o recomienda la visita a los mismos, por lo que tampoco será responsable del resultado obtenido. EL PROPIETARIO DE LA WEB no se responsabiliza del establecimiento de hipervínculos por parte de terceros.
-
-        4. POLÍTICA DE PRIVACIDAD
+        </p>
+       <h3> 4. POLÍTICA DE PRIVACIDAD</h3>
+       <p>
         EL PROPETARIO DE LA WEB tratará los datos de forma confidencial y exclusivamente con la finalidad de ofrecer los servicios solicitados, con todas las garantías legales y de seguridad que impone el Reglamento (UE) 2016/679, del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos (RGPD), así como el Real Decreto 1720/2007, de 21 de diciembre y la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico.Los datos serán conservados el tiempo que dure el consentimiento, o en su caso, el tiempo legal establecido para cada una de las obligaciones legales que deriven de los tratamientos para los que se ha consentido. Para ello EL PROPIETARIO DE LA WEB adoptará los niveles de seguridad correspondientes requeridos por el Reglamento (UE) 2016/679 y demás normativa aplicable. No obstante, no asume ninguna responsabilidad por los daños y perjuicios derivados de alteraciones que terceros pueden causar en los sistemas informáticos, documentos electrónicos o ficheros del usuario.EL PROPIETARIO DE LA WEB podrá utilizar cookies durante la prestación de servicios del sitio web. Las cookies son ficheros físicos de información personal alojados en el propio terminal del usuario. El usuario tiene la posibilidad de configurar su programa navegador de manera que se impida la creación de archivos cookie o se advierta de la misma. Si opta a abandonar nuestro sitio web a través de enlaces a sitios web no pertenecientes a nuestra entidad, EL PROPIETARIO DE LA WEB no se hará responsable de las políticas de privacidad de dichos sitios web ni de las cookies que éstos puedan almacenar en el ordenador del usuario.Declaro haber sido informado de poder ejercitar mis derechos de acceso a los datos, su rectificación, supresión, oposición, limitación de su tratamiento o portabilidad de los mismos según lo establecido en el RGPD.
-
-        5.- POLÍTICA DE COOKIES
+        </p>
+        <h3>5.- POLÍTICA DE COOKIES</h3>
+        <p>
         Una cookie es una pequeña pieza de información que queda almacenada en tu navegador cuando visitas nuestro site. Gracias a la cookie, recordamos tus preferencias para que cuando nos visites de nuevo, obtengas una mejor experiencia online. Tú decides si permites o no las cookies, pero si decides no permitirlas, debes bloquearlas en tu navegador.Al permitir las cookies, podrás obtener una mejor experiencia en nuestro sitio web.Además, hay algunas acciones básicas que requieren cookies, tales como:
         a) Cookies de Sesión. Las cookies de sesión duran solamente por la duración de tu visita y se borran cuando cierras el navegador. Su finalidad principal es identificar el tipo de dispositivo, apoyar la seguridad sitio web o su funcionalidad básica. No contienen información personal que nos permita identificar a una persona.
         b) Cookies Persistentes o Permanentes: Se almacenan en el disco duro del dispositivo y nuestra web las lee cada vez que realizas una nueva visita a ; posee una fecha de caducidad o expiración determinada, cumplida la cual la cookie deja de funcionar. Nos permiten identificar tus acciones y preferencias; analizar las visitas y nos ayudan a comprender cómo llegan los usuarios a nuestra página y mejorar nuestros servicios.
@@ -59,14 +61,14 @@ const SecondPage = () => (
         e) Cookies Analíticas: Son cookies que tienen por finalidad el mantenimiento periódico y garantizar el mejor funcionamiento y servicio al usuario; recopilando datos de tu actividad.
         La mayoría de los navegadores están configurados de forma predeterminada para aceptar cookies, pero puedes cambiar la configuración para bloquear algunas o todas las cookies, si lo prefieres. Si no te gusta cómo esto afecta a su experiencia online, es igual de fácil de cambiar las cosas de nuevo.
         Los Navegadores para usado por los ordenadores como Internet Explorer, Firefox, Google Chrome, Safari, Opera y Navegadores para dispositivos móviles iOS, Android y Windows Phone 7 Utilización de sistemas de medición y analíticastas páginas web utilizan Google Analytics, un servicio de análisis de sitos webs prestado por Google, Inc. (“Google”), una compañía de Delaware, con domicilio en 1600 Amphitheatre Parkway, Mountain View (California), CA 94043, Estados Unidos. Google Analytics utiliza “cookies” para ayudar a analizar el uso que los usuarios hacen del sitio web. La información que genera la cookie acerca de tu uso del sitio web (incluyendo tu dirección IP) será directamente transmitida y archivada por Google en los servidores de Estados Unidos. Google usará esta información por cuenta de Orange con el propósito de (i) hacer un seguimiento de tu uso del sitio web, (ii) recopilar informes de la actividad del mismo, (iii) prestar otros servicios relacionados con la actividad del sitio web y el uso de Internet. Google podrá transmitir dicha información a terceros cuando así se lo requiera la legislación, o cuando dichos terceros procesen la información por cuenta de Google. Google no asociará su dirección IP con ningún otro dato del que disponga Google. Puedes oponerte al tratamiento de los datos o la información rechazando el uso de cookies mediante la selección de la configuración apropiada de tu navegador, sin embargo, debes saber que si lo haces es posible que no esté disponible la total funcionabilidad de este sitio web. Al utilizar este sitio web consientes el tratamiento de información por Google en la forma y para los fines arriba indicado
-
-        6. PROCEDIMIENTO EN CASO DE REALIZACIÓN DE ACTIVIDADES DE CARÁCTER ILÍCITO
-
+        </p>
+        <h3>6. PROCEDIMIENTO EN CASO DE REALIZACIÓN DE ACTIVIDADES DE CARÁCTER ILÍCITO</h3>
+        <p>
         En el caso de que cualquier usuario o un tercero considere que existen hechos o circunstancias que revelen el carácter ilícito de la utilización de cualquier contenido y/o de la realización de cualquier actividad en las páginas web incluidas o accesibles a través del sitio web, deberá enviar una notificación a EL PROPIETARIO DE LA WEB identificándose debidamente, especificando las supuestas infracciones y declarando expresamente y bajo su responsabilidad que la información proporcionada en la notificación es exacta.
         Para toda cuestión litigiosa que incumba al sitio web de EL PROPIETARIO DE LA WEB, será de aplicación la legislación española, siendo competentes los Juzgados y Tribunales de MADRID (España).
-
-        7. PUBLICACIONES
-
+        </p>
+        <h3>7. PUBLICACIONES</h3>
+        <p>
         La información administrativa facilitada a través del sitio web no sustituye la publicidad legal de las leyes, normativas, planes, disposiciones generales y actos que tengan que ser publicados formalmente a los diarios oficiales de las administraciones públicas, que constituyen el único instrumento que da fe de su autenticidad y contenido.
         </p>
   <Link to="/">Go back to the homepage</Link>
