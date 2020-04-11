@@ -46,19 +46,19 @@ const WidgetData = {
     Legal: [
         {
             id: 1,
-            name: 'Privacy',
-            url: '#'
+            name: 'Privacidad',
+            url: '/privacidad'
         },
         {
             id: 2,
-            name: 'Terms',
-            url: '#'
+            name: 'Aviso Legal',
+            url: 'legal'
         },
-        {
+        /* {
             id: 3,
             name: 'Advertise',
             url: '#'
-        },
+        }, */
     ],
     Social: [
         {
