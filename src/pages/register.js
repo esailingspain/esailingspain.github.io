@@ -58,7 +58,8 @@ const RegistrationForm = () => {
     dni: "",
     email: "",
     mobilePhone: "",
-    ishoreUser: "",
+    inshoreUser: "",
+    nvela:"",
     federationNumber: "",
   }
   const [isSubmitted, setSubmitted] = useState(false)
@@ -113,11 +114,12 @@ const FormField = ({ name, text, type = "text" }) => {
 const RegistrationContainer = ({ values, submitHandler }) => {
   return (
     <>
-      <h1>Inscripción para el Campeonato de España eSailing</h1>
-      <h2>TROFEO SAILING SUR - 11 al 25 de Abril 2020</h2>
+      <h1>COPA DE ESPAÑA DE eSAILING - TROFEO SAILING SUR</h1>
+      <h2>25 de Abril al 9 de Mayo 2020</h2>
+      <h3>FORMULARIO DE INSCRIPCIÓN </h3>
       <p>
         Inscripción oficial para la Copa de España de eSailing - Trofeo Sailing
-        Sur, organizado por la RFEV, la Secretaria de eSailng y la Comunidad
+        Sur, organizado por la RFEV, la Secretaria de eSailing y la Comunidad
         Española de eSailing de la aplicación Discord.
       </p>
       <p>
@@ -170,7 +172,7 @@ const RegistrationContainer = ({ values, submitHandler }) => {
             <FormField name="name" text="Nombre" />
             <FormField name="surname" text="Primer Apellido" />
             <FormField name="lastName" text="Segundo Apellido" />
-            <FormField name="birthDate" text="Fecha de nacimiento" />
+            <FormField name="birthDate" text="Fecha de nacimiento (dd/mm/aaaa)" />
             <FormField name="dni" text="DNI" />
             <FormField type="email" name="email" text="Email" />
             <FormField name="mobilePhone" text="Móvil" />
@@ -179,11 +181,16 @@ const RegistrationContainer = ({ values, submitHandler }) => {
               name="inshoreUser"
               text="Usuario de Virtual Regatta Inshore"
             />
+            <a href="https://www.sailranks.com/v/players">Consulta tu número</a>
+              <FormField
+              name="nvela"
+              text="Numero de vela SailRanks"
+            />
             <FormField name="federationNumber" text="Licencia Federativa" />
             {/* Comunidad autónoma */}
             {/* <button type="submit" disabled={isSubmitting}> */}
             <button type="submit" disabled={false}>
-              Submit
+              Enviar
             </button>
           </Form>
         )}
@@ -199,10 +206,13 @@ const PaymentContainer = ({ values }) => {
       <h1>Pago</h1>
       <p>
         Al pulsar el siguiente botón serás transferido a la pasarela de pago.
+        <br />
         También puedes proceder al pago realizando una transferencia a la
         cuenta:
         <br />
-        XXXXXXX:
+          ES62 0128 0381 58 0500005726 
+        <br />  
+          Concepto: Copa eSaling “NUMERO SAILRANKS”
       </p>
       <div>
         <a href={pay(values)} css={buttonStyle}>

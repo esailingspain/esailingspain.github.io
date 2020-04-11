@@ -28,8 +28,8 @@ class Works extends Component{
                         <WorkItem Class=" wow fadeIn" delay="1s"
                             component={(props) => <InshoreIcon {...props}/>}
                             link="/register"
-                            Title="Campeonato Nacional"
-                            Details="Participa en el Campeonato de España Oficial de eSailing "
+                            Title="Copa de España"
+                            Details="Inscríbete en la Copa de España de eSailing "
                         />
                         
                         {/* <WorkItem Class=" wow fadeIn" delay="1.3s"
