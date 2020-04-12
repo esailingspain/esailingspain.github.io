@@ -37,7 +37,6 @@ const ccaa = {
 
 const RegistrationForm = () => {
   const initialValues = {
-    timestamp: "",
     name: "",
     surname: "",
     lastName: "",
@@ -124,9 +123,9 @@ const RegistrationContainer = ({ values, submitHandler }) => {
           surname: Yup.string()
             .max(20, "Must be 20 characters or less")
             .required("Required"),
-          lastName: Yup.string()
-            .max(20, "Must be 20 characters or less")
-            .required("Required"),
+          // lastName: Yup.string()
+          //   .max(20, "Must be 20 characters or less")
+          //   .required("Required"),
           email: Yup.string()
             .email("Invalid email address")
             .required("Required"),
@@ -240,9 +239,22 @@ const serialize = function(obj) {
 }
 
 const saveInGoogleSpreadSheets = async values => {
+  const dtf = new Intl.DateTimeFormat("en", {
+    year: "numeric",
+    month: "numeric",
+    day: "2-digit",
+  })
+  const [{ value: mo }, , { value: da }, , { value: ye }] = dtf.formatToParts(
+    values.birthDate
+  )
+  const newBirthDate = values.birthDate ? `${da}/${mo}/${ye}` : ""
+  const newValues = {
+    ...values,
+    birthDate: newBirthDate,
+  }
   const scriptURL =
     "https://script.google.com/macros/s/AKfycbyv3s6j72cO-825phKIKZ53L20C4LLe_vxXh31RvQqSA8eYh0df/exec"
-  const url = `${scriptURL}?${serialize(values)}`
+  const url = `${scriptURL}?${serialize(newValues)}`
   return fetch(url)
 }
 
