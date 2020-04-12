@@ -1,13 +1,15 @@
-import React, { Component } from "react"
+// eslint-disable-next-line
+import React from "react"
+import { Component } from "react"
 // import { Link } from "react-scroll"
-import { AnchorLink  as GLink } from "gatsby-plugin-anchor-links"
+import { AnchorLink as GLink } from "gatsby-plugin-anchor-links"
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core"
 
 const menuStyles = css`
   .nav-link:focus {
-    color:#fff !important;
+    color: #fff !important;
   }
 `
 
@@ -64,21 +66,54 @@ class MainMenu extends Component {
             <span></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="nav navbar-nav menu_nav ml-auto menu" css={menuStyles}>
+            <ul
+              className="nav navbar-nav menu_nav ml-auto menu"
+              css={menuStyles}
+            >
               <li>
-                <GLink to="/#home" activeClassName="active" className="nav-link">Home</GLink>
+                <GLink
+                  to="/#home"
+                  activeClassName="active"
+                  className="nav-link"
+                >
+                  Home
+                </GLink>
               </li>
               <li>
-                <GLink to="/#how-work" activeClassName="active" className="nav-link">Como</GLink>
+                <GLink
+                  to="/#how-work"
+                  activeClassName="active"
+                  className="nav-link"
+                >
+                  Como
+                </GLink>
               </li>
               <li>
-                <GLink to="/#features" activeClassName="active" className="nav-link">Servicios</GLink>
+                <GLink
+                  to="/#features"
+                  activeClassName="active"
+                  className="nav-link"
+                >
+                  Servicios
+                </GLink>
               </li>
               <li>
-                <GLink to="/#service" activeClassName="active" className="nav-link">Logros</GLink>
+                <GLink
+                  to="/#service"
+                  activeClassName="active"
+                  className="nav-link"
+                >
+                  Logros
+                </GLink>
               </li>
               <li>
-                <GLink to="/#testimonial" activeClassName="active" className="nav-link">Colaboradores</GLink>
+                <GLink
+                  to="/#testimonial"
+                  activeClassName="active"
+                  className="nav-link"
+                >
+                  Colaboradores
+                </GLink>
               </li>
               {/* <li>
                 <Link className="nav-link" activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={500}>Home</Link>

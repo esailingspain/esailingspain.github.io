@@ -1,4 +1,6 @@
-import React, { useState } from "react"
+// eslint-disable-next-line
+import React from "react"
+import { useState } from "react"
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core"
@@ -6,46 +8,31 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import MainMenu from "../components/Menu/MainMenu"
-import { Formik, Form, Field, ErrorMessage } from "formik"
+import { Formik, Form } from "formik"
 import * as Yup from "yup"
+import { FormField, FormDate, FormSelect } from "../components/formHelpers"
 
-const serialize = function(obj) {
-  var str = []
-  for (var p in obj)
-    if (obj.hasOwnProperty(p)) {
-      str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]))
-    }
-  return str.join("&")
-}
-
-const saveInGoogleSpreadSheets = async values => {
-  const scriptURL =
-    "https://script.google.com/macros/s/AKfycbyv3s6j72cO-825phKIKZ53L20C4LLe_vxXh31RvQqSA8eYh0df/exec"
-  const url = `${scriptURL}?${serialize(values)}`
-  return fetch(url)
-}
-
-const pay = values => {
-  let url = `https://www.rfev.es/default/pay/pay`
-  const keys = [
-    { key: "dni", value: values.dni },
-    { key: "nombre", value: values.name },
-    { key: "apellido1", value: values.surname },
-    { key: "apellido2", value: values.lastName },
-    { key: "email", value: values.email },
-    { key: "direccion", value: " " },
-    { key: "poblacion", value: " " },
-    { key: "cp", value: " " },
-    { key: "ref", value: "Copa España" },
-    { key: "concept", value: "Copa España" },
-    { key: "price", value: "5" },
-  ]
-  for (const p of keys) {
-    // console.log("p", p)
-    url += `/${p.key}/` + encodeURIComponent(p.value ?? " ")
-  }
-  // console.log("url", url)
-  return url
+const ccaa = {
+  "*": "Selecciona una opción",
+  andalucia: "Andalucía",
+  aragon: "Aragón",
+  asturias: "Principado de Asturias",
+  baleares: "Islas Baleares",
+  canarias: "Canarias",
+  cantabria: "Cantabria",
+  castillaLeon: "Castilla y León",
+  castillaLaMancha: "Castilla-La Mancha",
+  catalunya: "Cataluña",
+  valencia: "Comunidad Valenciana",
+  extremadura: "Extremadura",
+  galicia: "Galicia",
+  madrid: "Comunidad de Madrid",
+  murcia: "Región de Murcia",
+  navarra: "Comunidad Foral de Navarra",
+  euskadi: "País Vasco",
+  rioja: "La Rioja",
+  ceuta: "Ciudad Autónoma de Ceuta",
+  melilla: "Ciudad Autónoma de Melilla",
 }
 
 const RegistrationForm = () => {
@@ -59,7 +46,8 @@ const RegistrationForm = () => {
     email: "",
     mobilePhone: "",
     inshoreUser: "",
-    nvela:"",
+    ccaa: "",
+    nvela: "",
     federationNumber: "",
   }
   const [isSubmitted, setSubmitted] = useState(false)
@@ -99,31 +87,32 @@ const RegistrationForm = () => {
 
 export default RegistrationForm
 
-const FormField = ({ name, text, type = "text" }) => {
-  return (
-    <div style={{ minHeight: 110 }}>
-      <label htmlFor={name} style={{ display: "block" }}>
-        {text}
-      </label>
-      <Field type={type} name={name} style={{ display: "block" }} />
-      <ErrorMessage name={name} component="div" style={{ color: "red" }} />
-    </div>
-  )
-}
+/**********************/
+/*  Child Components  */
+/*                    */
+/**********************/
 
 const RegistrationContainer = ({ values, submitHandler }) => {
   return (
     <>
-      <h1>COPA DE ESPAÑA DE eSAILING - TROFEO SAILING SUR</h1>
-      <h2>25 de Abril al 9 de Mayo 2020</h2>
-      <h3>FORMULARIO DE INSCRIPCIÓN </h3>
+      <h1 style={{ marginBottom: 20 }}>
+        COPA DE ESPAÑA DE eSAILING - TROFEO SAILING SUR
+      </h1>
+      <h2 style={{ marginBottom: 20 }}>25 de Abril al 9 de Mayo 2020</h2>
+      <h3 style={{ marginBottom: 20 }}>FORMULARIO DE INSCRIPCIÓN </h3>
       <p>
         Inscripción oficial para la Copa de España de eSailing - Trofeo Sailing
-        Sur, organizado por la RFEV, la Secretaria de eSailing y la Comunidad
+        Sur.
+        <br />
+        Organizado por la RFEV, la Secretaria de eSailing y la Comunidad
         Española de eSailing de la aplicación Discord.
       </p>
+      <br />
       <p>
-        Descarga el <a href="https://rfev.es/uploaded_files/AR-CtodeEspa%C3%B1aRFEV.pdf_7310_es.pdf">Anuncio de Regata</a>
+        Descarga el{" "}
+        <a href="https://rfev.es/uploaded_files/AR-CtodeEspa%C3%B1aRFEV.pdf_7310_es.pdf">
+          Anuncio de Regata
+        </a>
       </p>
       <br></br>
       <Formik
@@ -151,28 +140,19 @@ const RegistrationContainer = ({ values, submitHandler }) => {
           //   )
           //   .required("Required"),
         })}
-        // validate={values => {
-        //   const errors = {}
-        //   if (!values.email) {
-        //     errors.email = "Requerido"
-        //   } else if (
-        //     !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-        //   ) {
-        //     errors.email = "Invalid email address"
-        //   }
-        //   if (!values.name) {
-        //     errors.name = "Requerido"
-        //   }
-        //   return errors
-        // }}
         onSubmit={submitHandler}
       >
-        {({ isSubmitting }) => (
+        {({ isSubmitting, values, setFieldValue }) => (
           <Form>
             <FormField name="name" text="Nombre" />
             <FormField name="surname" text="Primer Apellido" />
             <FormField name="lastName" text="Segundo Apellido" />
-            <FormField name="birthDate" text="Fecha de nacimiento (dd/mm/aaaa)" />
+            <FormDate
+              name="birthDate"
+              text="Fecha de nacimiento (dd/mm/aaaa)"
+              values={values}
+              setFieldValue={setFieldValue}
+            />
             <FormField name="dni" text="DNI" />
             <FormField type="email" name="email" text="Email" />
             <FormField name="mobilePhone" text="Móvil" />
@@ -180,16 +160,22 @@ const RegistrationContainer = ({ values, submitHandler }) => {
             <FormField
               name="inshoreUser"
               text="Usuario de Virtual Regatta Inshore"
+              subtitle={
+                <a href="https://www.sailranks.com/v/players">
+                  Consulta tu número
+                </a>
+              }
             />
-            <a href="https://www.sailranks.com/v/players">Consulta tu número</a>
-              <FormField
-              name="nvela"
-              text="Numero de vela SailRanks"
-            />
+            <FormField name="nvela" text="Numero de vela SailRanks" />
             <FormField name="federationNumber" text="Licencia Federativa" />
-            {/* Comunidad autónoma */}
-            {/* <button type="submit" disabled={isSubmitting}> */}
-            <button type="submit" disabled={false}>
+            <FormSelect
+              name="ccaa"
+              text="Comunidad autónoma"
+              values={values}
+              options={ccaa}
+            />
+            <button type="submit" disabled={isSubmitting}>
+              {/* <button type="submit" disabled={false}> */}
               Enviar
             </button>
           </Form>
@@ -210,9 +196,9 @@ const PaymentContainer = ({ values }) => {
         También puedes proceder al pago realizando una transferencia a la
         cuenta:
         <br />
-          ES62 0128 0381 58 0500005726 
-        <br />  
-          Concepto: Copa eSaling “NUMERO SAILRANKS”
+        ES62 0128 0381 58 0500005726
+        <br />
+        Concepto: Copa eSaling “NUMERO SAILRANKS”
       </p>
       <div>
         <a href={pay(values)} css={buttonStyle}>
@@ -238,3 +224,47 @@ const buttonStyle = css`
     color: #cccccc;
   }
 `
+
+/**********************/
+/*  Helper Functions  */
+/*                    */
+/**********************/
+
+const serialize = function(obj) {
+  var str = []
+  for (var p in obj)
+    if (obj.hasOwnProperty(p)) {
+      str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]))
+    }
+  return str.join("&")
+}
+
+const saveInGoogleSpreadSheets = async values => {
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbyv3s6j72cO-825phKIKZ53L20C4LLe_vxXh31RvQqSA8eYh0df/exec"
+  const url = `${scriptURL}?${serialize(values)}`
+  return fetch(url)
+}
+
+const pay = values => {
+  let url = `https://www.rfev.es/default/pay/pay`
+  const keys = [
+    { key: "dni", value: values.dni },
+    { key: "nombre", value: values.name },
+    { key: "apellido1", value: values.surname },
+    { key: "apellido2", value: values.lastName },
+    { key: "email", value: values.email },
+    { key: "direccion", value: " " },
+    { key: "poblacion", value: " " },
+    { key: "cp", value: " " },
+    { key: "ref", value: "Copa España" },
+    { key: "concept", value: "Copa España" },
+    { key: "price", value: "5" },
+  ]
+  for (const p of keys) {
+    // console.log("p", p)
+    url += `/${p.key}/` + encodeURIComponent(p.value ?? " ")
+  }
+  // console.log("url", url)
+  return url
+}

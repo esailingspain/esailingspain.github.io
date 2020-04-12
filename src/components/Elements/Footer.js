@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import AboutWD from "./widgets/AboutWD"
-import LinkWD from "./widgets/LinkWD"
+// import LinkWD from "./widgets/LinkWD"
 //import WorkWD from "./widgets/WorkWD"
 import WidgetData from "./widgets/WidgetData"
 import LegalWD from "./widgets/LegalWD"
@@ -10,11 +10,11 @@ import FacebookPage from "./widgets/FacebookPageWD"
 class Footer extends Component {
   render() {
     const footerLinks = [
-          {
-           id: 1,
-           name: "Política de privacidad",
-           url: "/privacidad",
-         },/*
+      {
+        id: 1,
+        name: "Política de privacidad",
+        url: "/privacidad",
+      } /*
          {
            id: 2,
            name: "About",
@@ -29,18 +29,31 @@ class Footer extends Component {
            id: 4,
            name: "Contact Support",
            url: "#",
-         }, */
+         }, */,
     ]
     return (
       <footer className="footer-area">
         <div className="footer-top">
           <div className="container">
             <div className="row">
-                <AboutWD Logo="logo-trans-mini.png" Details="Actualmente la mayor comunidad de e-sailing del mundo." />
-                {/* <LinkWD Title="About" WidgetData={WidgetData.PageLink} Class="wow fadeInUp" delay="200ms" />
+              <AboutWD
+                Logo="logo-trans-mini.png"
+                Details="Actualmente la mayor comunidad de e-sailing del mundo."
+              />
+              {/* <LinkWD Title="About" WidgetData={WidgetData.PageLink} Class="wow fadeInUp" delay="200ms" />
                 <WorkWD Title="Work" WidgetData={WidgetData.Work} Class="wow fadeInUp" delay="400ms" />*/}
-                <LegalWD Title="Legal" WidgetData={WidgetData.Legal} Class="wow fadeInUp" delay="600ms" /> 
-              <SubscribeWD Title="Redes Sociales" WidgetData={WidgetData.Social} Class="wow fadeInUp" delay="800ms" />
+              <LegalWD
+                Title="Legal"
+                WidgetData={WidgetData.Legal}
+                Class="wow fadeInUp"
+                delay="600ms"
+              />
+              <SubscribeWD
+                Title="Redes Sociales"
+                WidgetData={WidgetData.Social}
+                Class="wow fadeInUp"
+                delay="800ms"
+              />
               <FacebookPage Class="wow fadeInUp" delay="800ms" />
             </div>
           </div>
