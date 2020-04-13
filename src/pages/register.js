@@ -113,6 +113,11 @@ const RegistrationContainer = ({ values, submitHandler }) => {
           Anuncio de Regata
         </a>
       </p>
+      <p> Consulta el {" "}
+         <a href="https://docs.google.com/spreadsheets/d/1YXgMWsLqrON_EyiOci8zdZtZSrBkNMAwIEPOrkF-VvE/edit?usp=sharing">
+        LISTADO DE INSCRITOS
+        </a>
+      </p>
       <br></br>
       <Formik
         initialValues={values}
