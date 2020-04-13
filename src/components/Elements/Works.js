@@ -13,6 +13,14 @@ class Works extends Component {
         <div className="container">
           <CenterTitle Title="¿Cómo funciona?" Subtitle="Es muy sencillo." />
           <div className="row">
+          <WorkItem
+              Class=" wow fadeIn"
+              delay="1s"
+              component={props => <RFEVIcon {...props} />}
+              link="/register"
+              Title="Copa de España"
+              Details="Inscríbete en la Copa de España de eSailing "
+            />
             <WorkItem
               Class=" wow fadeIn"
               delay="0.5s"
@@ -29,15 +37,7 @@ class Works extends Component {
               Title="eSailing España"
               Details="Únete a nuestro discord. La mayor comunidad de eSailing del mundo."
             />
-            <WorkItem
-              Class=" wow fadeIn"
-              delay="1s"
-              component={props => <RFEVIcon {...props} />}
-              link="/register"
-              Title="Copa de España"
-              Details="Inscríbete en la Copa de España de eSailing "
-            />
-
+            
             {/* <WorkItem
               Class=" wow fadeIn"
               delay="1.3s"

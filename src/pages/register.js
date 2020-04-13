@@ -109,7 +109,7 @@ const RegistrationContainer = ({ values, submitHandler }) => {
       <br />
       <p>
         Descarga el{" "}
-        <a href="https://rfev.es/uploaded_files/AR-CtodeEspa%C3%B1aRFEV.pdf_7310_es.pdf">
+        <a href="https://www.rfev.es/uploaded_files/AR-CopaEspa%C3%B1aSailingSur_vRFEV6.pdf_7328_es.pdf">
           Anuncio de Regata
         </a>
       </p>
@@ -159,13 +159,15 @@ const RegistrationContainer = ({ values, submitHandler }) => {
             <FormField
               name="inshoreUser"
               text="Usuario de Virtual Regatta Inshore"
+                         />
+            <FormField 
+              name="nvela" 
+              text="Numero de vela SailRanks" 
               subtitle={
-                <a href="https://www.sailranks.com/v/players">
-                  Consulta tu número
-                </a>
-              }
-            />
-            <FormField name="nvela" text="Numero de vela SailRanks" />
+              <a href="https://www.sailranks.com/v/players">
+                Consulta tu número
+              </a>
+            }/>
             <FormField name="federationNumber" text="Licencia Federativa" />
             <FormSelect
               name="ccaa"
