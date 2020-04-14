@@ -118,6 +118,14 @@ const RegistrationContainer = ({ values, submitHandler }) => {
         LISTADO DE INSCRITOS
         </a>
       </p>
+      <br />
+      <br />
+      <h4>
+        Consulta las bases del sorteo de PREMIOS - BY SAILINGSUR --> {" "}
+        <a href="https://www.sailingsurstore.com/es/content/9-sorteo-copa-de-espana-esailing-trofeo-sailingsur">
+          GRAN SORTEO PARA LOS PARTICIPANTES
+        </a>
+      </h4>
       <br></br>
       <Formik
         initialValues={values}
