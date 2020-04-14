@@ -47,7 +47,7 @@ const RegistrationForm = () => {
     inshoreUser: "",
     ccaa: "",
     nvela: "",
-    federationNumber: "",
+    // federationNumber: "",
   }
   const [isSubmitted, setSubmitted] = useState(false)
   const [formValues, setFormValues] = useState(initialValues)
@@ -181,7 +181,7 @@ const RegistrationContainer = ({ values, submitHandler }) => {
                 Consulta tu número
               </a>
             }/>
-            <FormField name="federationNumber" text="Licencia Federativa" />
+            {/* <FormField name="federationNumber" text="Licencia Federativa" /> */}
             <FormSelect
               name="ccaa"
               text="Comunidad autónoma"
