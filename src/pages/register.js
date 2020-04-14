@@ -120,13 +120,13 @@ const RegistrationContainer = ({ values, submitHandler }) => {
       </p>
       <br />
       <br />
-      <h4>
+      {/* <h4>
         Consulta las bases del sorteo de PREMIOS - BY SAILINGSUR --> {" "}
         <a href="https://www.sailingsurstore.com/es/content/9-sorteo-copa-de-espana-esailing-trofeo-sailingsur">
           GRAN SORTEO PARA LOS PARTICIPANTES
         </a>
-      </h4>
-      <br></br>
+      </h4> */}
+      
       <Formik
         initialValues={values}
         validationSchema={Yup.object({
