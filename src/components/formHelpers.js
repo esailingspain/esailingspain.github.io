@@ -10,19 +10,22 @@ import "react-datepicker/dist/react-datepicker.css"
 import es from "date-fns/locale/es"
 registerLocale("es", es)
 
-export const FormField = ({ name, text, type = "text", subtitle }) => {
+export const FormField = ({ name, text, type = "text", subtitle, suffix = "", ...props }) => {
   return (
     <div style={{ minHeight: subtitle ? 152 : 110 }}>
       <label htmlFor={name} style={{ display: "block" }}>
         {text}
       </label>
+      <div style={{fontSize: "small"}}>
       {subtitle ? <div style={{ marginBottom: 8 }}>{subtitle}</div> : ""}
+      </div>
       <Field
         type={type}
         name={name}
         css={inputStyle}
         className="form-control"
-      />
+        {...props}
+      /> {suffix}
       <ErrorMessage name={name} component="div" style={{ color: "red" }} />
     </div>
   )
@@ -75,7 +78,7 @@ export const FormSelect = ({ name, text, values, subtitle, options }) => {
 }
 
 const inputStyle = css`
-  display: block;
+  display: inline;
   height: 2.4em;
   width: 16em;
 `
