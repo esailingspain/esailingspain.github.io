@@ -14,7 +14,35 @@ import { FormField, FormDate, FormSelect } from "../../components/formHelpers"
 
 const categories = {
   "*": "Selecciona una opción",
-  nombreSinEspacios: "Nombre para mostrar",
+  sub15: "Sub 15",
+  sub18: "Sub 18",
+  menor30:"menor30",
+  menor40:"menor40",
+  menor50:"menor50",
+  mayorigual50:"mayorigual50"
+}
+
+const ccaa = {
+  "*": "Selecciona una opción",
+  andalucia: "Andalucía",
+  aragon: "Aragón",
+  asturias: "Principado de Asturias",
+  baleares: "Islas Baleares",
+  canarias: "Canarias",
+  cantabria: "Cantabria",
+  castillaLeon: "Castilla y León",
+  castillaLaMancha: "Castilla-La Mancha",
+  catalunya: "Cataluña",
+  valencia: "Comunidad Valenciana",
+  extremadura: "Extremadura",
+  galicia: "Galicia",
+  madrid: "Comunidad de Madrid",
+  murcia: "Región de Murcia",
+  navarra: "Comunidad Foral de Navarra",
+  euskadi: "País Vasco",
+  rioja: "La Rioja",
+  ceuta: "Ciudad Autónoma de Ceuta",
+  melilla: "Ciudad Autónoma de Melilla",
 }
 
 const RegistrationForm = () => {
@@ -29,8 +57,8 @@ const RegistrationForm = () => {
     inshoreUser: "",
     category: "",
     nvela: "",
-    federationNumber: "",
-    quantity: "3",
+    ccaa: "",
+    quantity: "2",
   }
   const [isSubmitted, setSubmitted] = useState(false)
   const [formValues, setFormValues] = useState(initialValues)
@@ -78,16 +106,16 @@ const RegistrationContainer = ({ values, submitHandler }) => {
   return (
     <>
       <h1 style={{ marginBottom: 20 }}>
-        COPA DE ESPAÑA DE eSAILING - TROFEO SAILING SUR
+        1er MARATÓN BENÉFICO DE eSAILING
       </h1>
-      <h2 style={{ marginBottom: 20 }}>25 de Abril al 9 de Mayo 2020</h2>
+      <h2 style={{ marginBottom: 20 }}>1 de Mayo 2020</h2>
       <h3 style={{ marginBottom: 20 }}>FORMULARIO DE INSCRIPCIÓN </h3>
       <p>
-        Inscripción oficial para la Copa de España de eSailing - Trofeo Sailing
-        Sur.
+        Inscripción para el 1er Maratón Benéfico de eSailing
         <br />
         Organizado por la RFEV, la Secretaria de eSailing y la Comunidad
-        Española de eSailing de la aplicación Discord.
+        Española de eSailing de la aplicación Discord para recaudar fondos
+        para asociaciones de ayuda directa a las víctimas del COVID19.
       </p>
       <br />
       <p>
@@ -140,7 +168,12 @@ const RegistrationContainer = ({ values, submitHandler }) => {
               }
             />
             <FormField name="nvela" text="Numero de vela SailRanks" />
-            <FormField name="federationNumber" text="Licencia Federativa" />
+            <FormSelect
+              name="ccaa"
+              text="Comunidad autónoma"
+              values={values}
+              options={ccaa}
+            />
             <FormSelect
               name="category"
               text="Categoría"
@@ -152,7 +185,7 @@ const RegistrationContainer = ({ values, submitHandler }) => {
               type="number"
               min="2"
               text="Cantidad (€)"
-              step="0.1"
+              step="1"
               subtitle="Cantidad a aportar para la causa benéfica. Mínimo 2€"
               suffix="€"
             />
@@ -253,9 +286,9 @@ const pay = values => {
     { key: "direccion", value: " " },
     { key: "poblacion", value: " " },
     { key: "cp", value: " " },
-    { key: "ref", value: "Copa España" },
-    { key: "concept", value: "Copa España" },
-    { key: "price", value: "5" },
+    { key: "ref", value: "Benefica" },
+    { key: "concept", value: "Benefica" },
+    { key: "price", value: values.quantity},
   ]
   for (const p of keys) {
     // console.log("p", p)
