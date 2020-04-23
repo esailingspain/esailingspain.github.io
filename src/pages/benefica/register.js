@@ -14,11 +14,13 @@ import { FormField, FormDate, FormSelect } from "../../components/formHelpers"
 
 const categories = {
   "*": "Selecciona una opción",
+  donante:"donantes",
   sub15: "Sub 15",
   sub18: "Sub 18",
-  menor30:"menor30",
-  menor40:"menor40",
-  menor50:"menor50",
+  menor24:"Sub 24",
+  menor30:"Sub 30",
+  menor40:"Sub 40",
+  menor50:"Sub 50",
   mayorigual50:"mayorigual50"
 }
 
@@ -113,7 +115,7 @@ const RegistrationContainer = ({ values, submitHandler }) => {
       <p>
         Inscripción para el 1er Maratón Benéfico de eSailing
         <br />
-        Organizado por la RFEV, la Secretaria de eSailing y la Comunidad
+        Organizado por la RFEV, el RCM de Melilla, la Secretaria de eSailing y la Comunidad
         Española de eSailing de la aplicación Discord para recaudar fondos
         para asociaciones de ayuda directa a las víctimas del COVID19.
       </p>
@@ -214,7 +216,7 @@ const PaymentContainer = ({ values }) => {
         <br />
         ES62 0128 0381 58 0500005726
         <br />
-        Concepto: Copa eSaling “NUMERO SAILRANKS”
+        Concepto: Maratón eSaling “NUMERO SAILRANKS”
       </p>
       <div>
         <a href={pay(values)} css={buttonStyle}>

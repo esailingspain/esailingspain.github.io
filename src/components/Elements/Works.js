@@ -17,9 +17,9 @@ class Works extends Component {
               Class=" wow fadeIn"
               delay="1s"
               component={props => <RFEVIcon {...props} />}
-              link="/register"
-              Title="Copa de España"
-              Details="Inscríbete en la Copa de España de eSailing "
+              link="/benefica/register"
+              Title="I Maratón Benéfico"
+              Details="Inscríbete en el 1er Maratón Benéfico de eSailing "
             />
             <WorkItem
               Class=" wow fadeIn"
@@ -29,13 +29,13 @@ class Works extends Component {
               Title="Virtual Regatta"
               Details="Virtual Regatta Inshore: El juego oficial de la World Sailing."
             />
-            <WorkItem
+          <WorkItem
               Class=" wow fadeIn"
               delay="1s"
-              component={props => <DiscordIcon {...props} />}
-              link="https://discord.gg/8PfD8pu"
-              Title="eSailing España"
-              Details="Únete a nuestro discord. La mayor comunidad de eSailing del mundo."
+              component={props => <RFEVIcon {...props} />}
+              link="/register"
+              Title="Copa de España"
+              Details="Inscríbete en la Copa de España de eSailing "
             />
             
             {/* <WorkItem
