@@ -122,8 +122,8 @@ const RegistrationContainer = ({ values, submitHandler }) => {
       <br />
       <p>
         Descarga el{" "}
-        <a href="https://rfev.es/uploaded_files/AR-CtodeEspa%C3%B1aRFEV.pdf_7310_es.pdf">
-          Anuncio de Regata
+        <a href="https://rfev.es/uploaded_files/Document_7335_20200424120043_es.pdf">
+          Anuncio del Maratón
         </a>
       </p>
       <br></br>
