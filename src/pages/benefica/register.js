@@ -14,7 +14,7 @@ import { FormField, FormDate, FormSelect } from "../../components/formHelpers"
 
 const categories = {
   "*": "Selecciona una opción",
-  donante:"donantes",
+  donante:"Número vela 0",
   sub15: "Sub 15",
   sub18: "Sub 18",
   menor24:"Sub 24",
@@ -118,6 +118,8 @@ const RegistrationContainer = ({ values, submitHandler }) => {
         Organizado por la RFEV, el RCM de Melilla, la Secretaria de eSailing y la Comunidad
         Española de eSailing de la aplicación Discord para recaudar fondos
         para asociaciones de ayuda directa a las víctimas del COVID19.
+        <br />
+        PARTICIPA EN TU CATEGORÍA O HAZ UNA DONACIÓN COMO "Nº VELA 0"
       </p>
       <br />
       <p>
